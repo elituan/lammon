@@ -1,0 +1,15 @@
+Universe = vanilla
+Executable = lmd.sh
+
+REQUEST_GPUS = 4
+request_memory  = 96 GB
+request_cpus  = 24
+Requirements = TARGET.Machine == "vnode01.l3s.uni-hannover.de"
+
+should_transfer_files = YES
+input = /dev/null
+output = /home/ehoang/eli/LMMCT/lmd/condor_jobs/lmd.out
+error = /home/ehoang/eli/LMMCT/lmd/condor_jobs/lmd.error
+log = /home/ehoang/eli/LMMCT/lmd/condor_jobs/lmd.log
+
+Queue

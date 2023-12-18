@@ -1,0 +1,17 @@
+Universe = vanilla
+Executable = /home/ehoang/eli/LMMCT/lmd/condor_jobs/seq_no2stage_noboxrefine_splitVoca_v2/run.sh
+
+REQUEST_GPUS = 4
+request_memory  = 80 GB
+request_cpus  = 24
+Requirements = TARGET.Machine == "vnode01.l3s.uni-hannover.de"
+stream_output = True
+stream_error = True
+
+should_transfer_files = YES
+input = /dev/null
+output = /home/ehoang/eli/LMMCT/lmd/condor_jobs/seq_no2stage_noboxrefine_splitVoca_v2/out.out
+error = /home/ehoang/eli/LMMCT/lmd/condor_jobs/seq_no2stage_noboxrefine_splitVoca_v2/error.error
+log = /home/ehoang/eli/LMMCT/lmd/condor_jobs/seq_no2stage_noboxrefine_splitVoca_v2/log.log
+
+Queue
